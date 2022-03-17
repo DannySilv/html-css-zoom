@@ -19,11 +19,27 @@ ul {
     list-style: none;
 }
 
+li {
+    display: inline-block;
+    text-align: center;
+    padding: 0.5em 0.5em;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.icon:not(.fa-share-square){
+    filter: invert(1);
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+}
+
 /* TEXT */
 .text {
     color: white;
     font-size: 0.7em;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 /* HEADER */
@@ -36,9 +52,75 @@ header {
 
 header .box {
     height: 35%;
-    background-color: rgb(78, 78, 78);
+    background-color: #4e4e4e;
     margin-top: 6px;
     margin-right: 6px;
     padding: 0.4em 0.4em 0.6em;
+    border-radius: 0.6em;
+}
+
+/* MAIN */
+main > ul {
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100vh - 140px);
+    overflow-y: auto;
+}
+
+.main-pos-abs {
+    position: absolute;
+    bottom: 1.1em;
+    left: 0.7em;
+    background-color: rgb(78, 78, 78, 0.7);
+    padding: 0.4em 0.4em;
+    font-weight: 400;
+}
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 80px;
+    width: 100%;
+    min-width: 60%;
+    background-color: rgb(29, 29, 29);
+}
+
+.user {
+    margin-left: 10px;
+}
+
+.user-arrow {
+    position:absolute;
+    top: 30%;
+    left: 100%;
+}
+
+.fa-share-square {
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+    color: rgb(0, 204, 0);
+}
+
+.footer-nav-arrow {
+    position: absolute;
+    top: 30%;
+    left: 85%;
+}
+.end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4e4e4e;
+    height: 80px;
+    width: 10%;
+}
+
+.footer-text {
+    text-align: center;
+    width: 80%;
+    background-color: red;
+    padding: 0.4em 0.4em;
     border-radius: 0.6em;
 }
