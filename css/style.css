@@ -80,11 +80,12 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     height: 80px;
     width: 100%;
     min-width: 60%;
     background-color: rgb(29, 29, 29);
+    overflow: auto;
 }
 
 .user {
