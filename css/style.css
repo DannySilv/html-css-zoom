@@ -60,6 +60,10 @@ header .box {
 }
 
 /* MAIN */
+main {
+    background-color: black;
+}
+
 main > ul {
     display: flex;
     flex-wrap: wrap;
